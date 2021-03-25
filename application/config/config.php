@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://www.repuestoscar.codesoft-ec.com/index.php/';
+$config['base_url']	= 'http://localhost/repuestoscar/';
 
 /*
 |--------------------------------------------------------------------------
@@ -357,6 +357,7 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
+$config['url_temporal'] = '';
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */
