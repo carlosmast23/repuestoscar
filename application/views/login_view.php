@@ -20,12 +20,12 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet" />
 
 <!-- bootstrap core css -->
-<link rel="stylesheet" type="text/css" href="<?=base_url()?>css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
 <!-- Custom styles for this template -->
-<link href="<?=base_url()?>css/style.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
 <!-- responsive style -->
-<link href="<?=base_url()?>css/responsive.css" rel="stylesheet" />
+<link href="css/responsive.css" rel="stylesheet" />
 </head>
 
 <body class="sub_page">
@@ -35,7 +35,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
           <a class="navbar-brand" href="<?=base_url()?>">
-            <img src="<?=base_url()?>images/logo.png" alt="" />
+            <img src="images/logo.png" alt="" />
         </a>
     </nav>
 </div>
@@ -84,8 +84,8 @@
 </div>
 </div>
 </section>
-<script type="text/javascript" src="<?=base_url()?>js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="<?=base_url()?>js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
 </script>
 </body>
 

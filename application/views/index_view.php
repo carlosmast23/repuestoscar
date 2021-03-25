@@ -192,7 +192,7 @@
     <div class="portfolio_container layout_padding">
       <div class="box-1">
         <div class="img-box b-1">
-          <img src="<?=base_url()?>images/p1.png" alt="">
+          <img src="images/p1.png" alt="">
           <div class="btn-box">
             <a href="" class="btn-1">
 
@@ -203,7 +203,7 @@
           </div>
         </div>
         <div class="img-box b-2">
-          <img src="<?=base_url()?>images/p2.jpg" alt="">
+          <img src="images/p2.jpg" alt="">
           <div class="btn-box">
             <a href="" class="btn-1">
 
@@ -216,7 +216,7 @@
       </div>
       <div class="box-2">
         <div class="img-box b-3">
-          <img src="<?=base_url()?>images/p3.jpg" alt="">
+          <img src="images/p3.jpg" alt="">
           <div class="btn-box">
             <a href="" class="btn-1">
 
@@ -227,7 +227,7 @@
           </div>
         </div>
         <div class="img-box b-4">
-          <img src="<?=base_url()?>images/p4.jpg" alt="">
+          <img src="images/p4.jpg" alt="">
           <div class="btn-box">
             <a href="" class="btn-1">
 
@@ -293,11 +293,11 @@
         </a>
         <a href="">
           <img src="images/call.png" alt="">
-          <span>+01 12345678901</span>
+          <span>+593 99 289 8724</span>
         </a>
         <a href="">
           <img src="images/mail.png" alt="">
-          <span> demo@gmail.com</span>
+          <span>lareshehino3174@gmail.com</span>
         </a>
       </div>
     </div>
