@@ -1,3 +1,6 @@
+<?php
+$urltemp=base_urltmp();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -23,12 +26,12 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet" />
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="<?=$urltemp?>css/bootstrap.css" />
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="<?=$urltemp?>css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="<?=$urltemp?>css/responsive.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -38,7 +41,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="" />
+            <img src="<?=$urltemp?>images/logo.png" alt="" />
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -86,7 +89,7 @@
                 <div class="row">
                   <div class="col-md-6 px-0">
                     <div class="img-box">
-                      <img src="images/slider-img.jpg" alt="" />
+                      <img src="<?=$urltemp?>images/slider-img.jpg" alt="" />
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -134,16 +137,16 @@
         <div class="col-lg-6 ">
           <div class="img-container tab-content">
             <div class="img-box tab-pane fade show active" id="img1" role="tabpanel">
-              <img src="images/service-img.jpg" alt="" />
+              <img src="<?=$urltemp?>images/service-img.jpg" alt="" />
             </div>
             <div class="img-box tab-pane fade  " id="img2" role="tabpanel">
-              <img src="images/service-img.jpg" alt="" />
+              <img src="<?=$urltemp?>images/service-img.jpg" alt="" />
             </div>
             <div class="img-box tab-pane fade  " id="img3" role="tabpanel">
-              <img src="images/service-img.jpg" alt="" />
+              <img src="<?=$urltemp?>images/service-img.jpg" alt="" />
             </div>
             <div class="img-box tab-pane fade  " id="img4" role="tabpanel">
-              <img src="images/service-img.jpg" alt="" />
+              <img src="<?=$urltemp?>images/service-img.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -186,13 +189,13 @@
         Por<span>taf</span>olio
       </h2>
       <p>
-        adipiscingelit,sed do eiusmod tempor incididunt ut labore et dolore magn
+Nuestros repuestos
       </p>
     </div>
     <div class="portfolio_container layout_padding">
       <div class="box-1">
         <div class="img-box b-1">
-          <img src="images/p1.png" alt="">
+          <img src="<?=$urltemp?>images/p1.png" alt="">
           <div class="btn-box">
             <a href="" class="btn-1">
 
@@ -203,7 +206,7 @@
           </div>
         </div>
         <div class="img-box b-2">
-          <img src="images/p2.jpg" alt="">
+          <img src="<?=$urltemp?>images/p2.jpg" alt="">
           <div class="btn-box">
             <a href="" class="btn-1">
 
@@ -216,7 +219,7 @@
       </div>
       <div class="box-2">
         <div class="img-box b-3">
-          <img src="images/p3.jpg" alt="">
+          <img src="<?=$urltemp?>images/p3.jpg" alt="">
           <div class="btn-box">
             <a href="" class="btn-1">
 
@@ -227,7 +230,7 @@
           </div>
         </div>
         <div class="img-box b-4">
-          <img src="images/p4.jpg" alt="">
+          <img src="<?=$urltemp?>images/p4.jpg" alt="">
           <div class="btn-box">
             <a href="" class="btn-1">
 
@@ -288,15 +291,15 @@
           CONTACTANOS
         </h6>
         <a href="">
-          <img src="images/location.png" alt="">
+          <img src="<?=$urltemp?>images/location.png" alt="">
           <span> Quito, Sangolqui </span>
         </a>
         <a href="">
-          <img src="images/call.png" alt="">
+          <img src="<?=$urltemp?>images/call.png" alt="">
           <span>+593 99 289 8724</span>
         </a>
         <a href="">
-          <img src="images/mail.png" alt="">
+          <img src="<?=$urltemp?>images/mail.png" alt="">
           <span>lareshehino3174@gmail.com</span>
         </a>
       </div>
@@ -318,11 +321,11 @@
 <!-- end info section -->
 
 
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="<?=$urltemp?>js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="<?=$urltemp?>js/bootstrap.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
 </script>
-<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="<?=$urltemp?>js/custom.js"></script>
 
 </body>
 

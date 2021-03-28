@@ -1,3 +1,6 @@
+<?php
+$urltemp=base_urltmp();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -20,12 +23,12 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet" />
 
 <!-- bootstrap core css -->
-<link rel="stylesheet" type="text/css" href="http://www.repuestoscar.codesoft-ec.com/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="<?=$urltemp?>css/bootstrap.css" />
 
 <!-- Custom styles for this template -->
-<link href="http://www.repuestoscar.codesoft-ec.com/css/style.css" rel="stylesheet" />
+<link href="<?=$urltemp?>css/style.css" rel="stylesheet" />
 <!-- responsive style -->
-<link href="http://www.repuestoscar.codesoft-ec.com/css/responsive.css" rel="stylesheet" />
+<link href="<?=$urltemp?>css/responsive.css" rel="stylesheet" />
 </head>
 
 <body class="sub_page">
@@ -35,7 +38,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
           <a class="navbar-brand" href="<?=base_url()?>">
-            <img src="http://www.repuestoscar.codesoft-ec.com/images/logo.png" alt="" />
+            <img src="<?=$urltemp?>images/logo.png" alt="" />
         </a>
     </nav>
 </div>
@@ -84,8 +87,8 @@
 </div>
 </div>
 </section>
-<script type="text/javascript" src="http://www.repuestoscar.codesoft-ec.com/js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="http://www.repuestoscar.codesoft-ec.com/js/bootstrap.js"></script>
+<script type="text/javascript" src="<?=$urltemp?>js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="<?=$urltemp?>js/bootstrap.js"></script>
 </script>
 </body>
 

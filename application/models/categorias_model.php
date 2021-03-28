@@ -15,7 +15,7 @@ class Categorias_model extends CI_Model {
     public function index_categorias_mdl() {
 
         $datos = "";
-        $query = $this->db->query('SELECT * FROM categorias');
+        $query = $this->db->query('SELECT * FROM categorias order by cat_nombre');
         if ($query->num_rows() > 0) {
             foreach ($query->result() as $value) {
                 $cat_id = $value->cat_id;
@@ -36,7 +36,7 @@ class Categorias_model extends CI_Model {
     }
     public function lista_categorias_mdl() {
         $datos = "";
-        $query = $this->db->query('SELECT * FROM categorias');
+        $query = $this->db->query('SELECT * FROM categorias order by cat_nombre');
         if ($query->num_rows() > 0) {
             foreach ($query->result() as $value) {
                 $cat_id = $value->cat_id;
@@ -74,7 +74,7 @@ class Categorias_model extends CI_Model {
 
     public function combo_categorias_mdl($cat_id = '') {
         $html = "<select name='cat_id' id='cat_id' class='form-control'><option value=''>Seleccione categoria</option>";
-        $sql = "SELECT * FROM `categorias`";
+        $sql = "SELECT * FROM `categorias` order by cat_nombre";
         $query = $this->db->query($sql);
         if ($query->num_rows() > 0) {
             foreach ($query->result() as $data) {

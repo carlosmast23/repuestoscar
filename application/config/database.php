@@ -3,9 +3,9 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
+$db['default']['hostname'] ='codesoft-ec.com'; //'localhost';
+$db['default']['username'] = 'carlos';
+$db['default']['password'] = '1234';
 $db['default']['database'] = 'repuestoscar';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';

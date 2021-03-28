@@ -1,2 +1,0 @@
-# repuestoscar
-proyecto estudiantil temporal

@@ -16,7 +16,7 @@ class Clientes_model extends CI_Model {
         $this->load->model("categorias_model");
 
         $datos = "";
-        $query = $this->db->query('SELECT * FROM clientes');
+        $query = $this->db->query('SELECT * FROM clientes order by cli_fecha');
         if ($query->num_rows() > 0) {
             foreach ($query->result() as $value) {
                 $cli_id = $value->cli_id;
@@ -31,6 +31,7 @@ class Clientes_model extends CI_Model {
 
                 $datos.="<tr>";
                 $datos.="<td>$value->cli_id</td>";
+                $datos.="<td>$value->cli_fecha</td>";
                 $datos.="<td>$value->cli_nombres</td>";
                 $datos.="<td>$value->cli_apellidos</td>";
                 $datos.="<td>$value->cli_email</td>";
@@ -53,7 +54,7 @@ class Clientes_model extends CI_Model {
         $this->load->model("categorias_model");
 
         $datos = "";
-        $query = $this->db->query('SELECT * FROM clientes WHERE cli_estado='.$dato);
+        $query = $this->db->query('SELECT * FROM clientes WHERE cli_estado='.$dato. ' order by cli_fecha');
         if ($query->num_rows() > 0) {
             foreach ($query->result() as $value) {
                 $cli_id = $value->cli_id;
@@ -68,6 +69,7 @@ class Clientes_model extends CI_Model {
 
                 $datos.="<tr>";
                 $datos.="<td>$value->cli_id</td>";
+                $datos.="<td>$value->cli_fecha</td>";
                 $datos.="<td>$value->cli_nombres</td>";
                 $datos.="<td>$value->cli_apellidos</td>";
                 $datos.="<td>$value->cli_email</td>";

@@ -1,6 +1,6 @@
 <form action="<?= base_url() ?>clientes" method="post">
 
-    <table class="table table-dark table-striped">
+    <table class="table table-dark table-striped table-bordered table-sm small">
         <tr>
          <td colspan="3">
            <select class="form-control" name="cli_estado" >
@@ -16,11 +16,12 @@
 </tr>
 <tr>
     <th>ID</th>
+    <th>Fecha</th>
     <th>Nombre</th>
     <th>Apellido</th>
     <th>Email</th>
     <th>Teléfono</th>
-    <th>Pedido</th>
+    <th width="20%">Pedido</th>
     <th>Categoria</th>
     <th>Presupuesto</th>
     <th>Estado</th>

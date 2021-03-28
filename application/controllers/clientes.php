@@ -33,7 +33,11 @@ class Clientes extends CI_Controller {
 
     public function modificar_cliente() {
         $id = $this->uri->segment(3);
+        $this->load->model("productos_model");
+
         $datos = $this->clientes_model->datos_cliente_mdl($id);
+        $datos['combo_repuestos'] = $this->productos_model->combo_productos_mdl();
+
         $this->load->view('head');
         $this->load->view('clientes/modificar_cliente', $datos);
         $this->load->view('foot');
@@ -55,6 +59,7 @@ class Clientes extends CI_Controller {
     public function actualizar_cliente() {
         $id = $this->input->post("cli_id");
         $arreglo = array(
+            "rep_id" => $this->input->post("rep_id"),
             "cli_estado" => $this->input->post("cli_estado"),
             "cli_respuesta" => $this->input->post("cli_respuesta"),
             "cli_presupuesto" => $this->input->post("cli_presupuesto"),

@@ -37,6 +37,12 @@
         </td>
     </tr>  
     <tr>
+        <th>Repuestos</th>
+            <td>
+                <?= $combo_repuestos ?>
+            </td>
+        </tr> 
+    <tr>
         <th>Estado</th>
         <td>
             <select class="form-control" name="cli_estado" required>

@@ -15,7 +15,7 @@ class Productos_model extends CI_Model {
     public function index_productos_mdl() {
 
         $datos = "";
-        $query = $this->db->query('SELECT * FROM repuestos');
+        $query = $this->db->query('SELECT * FROM repuestos order by rep_descripcion');
         if ($query->num_rows() > 0) {
             foreach ($query->result() as $value) {
                 $rep_id = $value->rep_id;
@@ -49,7 +49,7 @@ class Productos_model extends CI_Model {
         $datos.="<th width='5%'>Cantidad</th>";
         $datos.="<th width='5%'>Opcion</th>";
         $datos.="</tr>";
-        $query = $this->db->query("SELECT * FROM repuestos WHERE cat_id='$cat_id'");
+        $query = $this->db->query("SELECT * FROM repuestos WHERE cat_id='$cat_id' order by rep_descripcion");
         if ($query->num_rows() > 0) {
             foreach ($query->result() as $value) {
                 $rep_id = $value->rep_id;
@@ -89,6 +89,23 @@ class Productos_model extends CI_Model {
     public function eliminar_producto_mdl($id) {
         $this->db->where("rep_id", $id);
         $this->db->delete("repuestos");
+    }
+
+    public function combo_productos_mdl($rep_id = '') {
+        $html = "<select name='rep_id' id='rep_id' class='form-control'><option value=''>Repuesto</option>";
+        $sql = "SELECT * FROM `repuestos` order by rep_descripcion";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            $html.="<option value='0'>NA</option>";
+            foreach ($query->result() as $data) {
+                if ($rep_id == $data->rep_id)
+                    $select = "selected";
+                else
+                    $select = "";
+                $html.="<option value='$data->rep_id' $select>" . $data->rep_descripcion    . " (".$data->rep_nombre.") - $".$data->rep_precio." </option>";
+            }
+        }
+        return $html . "</select>";
     }
 
 }
